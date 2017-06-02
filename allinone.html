@@ -43,14 +43,14 @@ var context = canvas.getContext("2d");
 var xrect = [];  
 var yrect = [];
 
-canvas.width = 600;
-canvas.height = 600;
+canvas.width = 700;
+canvas.height = 700;
 //to catch mouseclicks:
 canvas.addEventListener('click', clickReporter, false);
 
 //set initial values:
 var x1 = 100;
-var y1 = 100;
+var y1 = 200;
 var r1 = 5;
 
 var x2 = 100;
@@ -63,7 +63,7 @@ var rspeed1 = 0.1;
 
 var xspeed2 = 4;
 var yspeed2 = 2;
-var rspeed2 = 0.2;
+var rspeed2 = 0.3;
             
 var name = ""
 
@@ -74,7 +74,7 @@ setInterval(
         draw_stuff(x1, y1, x2, y2, r1, r2, name, "cyan")
     }
     //time interval (msec)
-    , 33
+    , 40
     );
 
 alert("Click close, then click anywhere in the black region");
