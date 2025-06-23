@@ -1,12 +1,78 @@
 <html>
 
 <head>
+    <base target="_blank">
     <style>
+        h4.fadeIn span {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 6s ease-out forwards;
+            /* display: inline-block; */
+            /* animation-delay: 10s; */
+
+        }
+h1:hover { text-shadow: 3px 3px 35px orange; }
+
+        h4.fadeIn span:nth-of-type(2) {
+            animation-delay: 2.5s;
+        }
+
+        h4.fadeIn span:nth-of-type(3) {
+            animation-delay: 5s;
+        }
+
+        h4.fadeIn span:nth-of-type(4) {
+            animation-delay: 7.5s;
+        }
+
+        h4.fadeIn span:nth-of-type(5) {
+            animation-delay: 10s;
+        }
+        h4.fadeIn span:nth-of-type(6) {
+            animation-delay: 12.5s;
+        }
+
+
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
         body {
-            background-color: black;
-            color: white;
+            background-color: rgb(69, 69, 69);
+            color: rgb(210, 207, 207);
             font-size: 20px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 5%;
+        }
+
+        img {
+            float: left;
+            margin-right: 7%;
+            size: 5%;
+
+        }
+
+        a:link,
+        a:visited {
+            color: white;
+        }
+
+        li {
+            margin-bottom: 20px;
+        }
+
+        a:hover {
+            color: orange;
+        }
+
+        h4 {
+            margin-left: 20%;
+            margin-right: 20%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
     </style>
 </head>
@@ -15,14 +81,49 @@
     <h1>
         Anthony Beckwith's Projects
     </h1>
-    <ul>
-        <li><a href="https://sites.google.com/view/people-stories/home">People's History Research</a></li>
-        <li><a href="https://sites.google.com/view/all-halls/other-bike-projects">Bicycling Projects</a></li>
-        <li><a href="https://www.reggaedawn.com/">Boston Reggae Dawn</a></li>
-        <li><a href="https://www.youtube.com/playlist?list=PLLnIhgSbqulOM4-StlMvmOj-kycQaZHnk">Original Music</a></li>
-        <li><a href="https://beckwith-cchs.netlify.app/other/links_to_all2.html">My Educational Web Projects</a></li>
+    <h2>
+        <ul>
+            <li><a href="https://sites.google.com/view/people-stories/home">People's History Research</a></li>
+            <li><a href="https://sites.google.com/view/all-halls/other-bike-projects">Bicycling Projects</a></li>
+            <li><a href="https://www.reggaedawn.com/">My Boston Reggae Dawn Webpage</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLLnIhgSbqulOM4-StlMvmOj-kycQaZHnk">Original Music on
+                    YouTube</a>
+            </li>
+            <li><a href="https://beckwith-cchs.netlify.app/other/links_to_all2.html">My Educational Web Projects</a>
+            </li>
 
-    </ul>
+        </ul>
+    </h2>
+    <h3 style="margin-left:50%">ABOUT Me:</h3>
+    <h4 class="fadeIn">
+        <span><img src="me.png"></span>
+        <span>
+            I grew up in Cambridge, MA, and got my B.S. in Mathematics from UMass/Amherst and a
+            Masters in Education from UMass/Boston
+        </span>
+        <br><Br>
+        <span>I recently retired from 30+ years of teaching high school
+            mathematics
+            and computer science
+        </span>
+        <br><Br>
+        <span>
+            I'm an avid bicycler who loves to plan complex multi-day trips
+        </span>
+            <br><br>
+            <span>
+                 I 
+            produce
+            original music and do volunteer work for a local historical society
+        </span>
+        <br><Br>
+        <span>
+            I currently live with my wife and three cats in Arlington, MA
+
+        </span>
+
+    </h4>
+    Contact: anthonyrbeckwith@gmail.com
 </body>
 
 </html>
