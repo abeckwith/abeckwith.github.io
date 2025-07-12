@@ -3,41 +3,41 @@
 <head>
     <title>Anthony Beckwith Projects</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <base target="_blank">
     <style>
         .hover-underline {
 
-  color: #ffffff;
-  position: relative;
-  display: inline-block;
-}
+            color: #ffffff;
+            position: relative;
+            display: inline-block;
+        }
 
-.hover-underline::after,
-.hover-underline::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 6px;
-  background: linear-gradient(to right, #ff0000, #1eff00);
-  bottom: -5px;
-  left: 0;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.4s ease-out;
-}
+        .hover-underline::after,
+        .hover-underline::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(to right, #ff0000, #1eff00);
+            bottom: -5px;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.4s ease-out;
+        }
 
-.hover-underline::before {
-  top: -5px;
-  transform-origin: left;
-}
+        .hover-underline::before {
+            top: -5px;
+            transform-origin: left;
+        }
 
-.hover-underline:hover::after,
-.hover-underline:hover::before {
-  transform: scaleX(1);
-}
+        .hover-underline:hover::after,
+        .hover-underline:hover::before {
+            transform: scaleX(1);
+        }
 
         h4.fadeIn span {
             opacity: 0;
@@ -47,7 +47,10 @@
             /* animation-delay: 10s; */
 
         }
-h1:hover { text-shadow: 3px 3px 35px orange; }
+
+        h1:hover {
+            text-shadow: 3px 3px 35px orange;
+        }
 
         h4.fadeIn span:nth-of-type(2) {
             animation-delay: 1.5s;
@@ -64,10 +67,12 @@ h1:hover { text-shadow: 3px 3px 35px orange; }
         h4.fadeIn span:nth-of-type(5) {
             animation-delay: 6s;
         }
+
         h4.fadeIn span:nth-of-type(6) {
             animation-delay: 7.5s;
         }
-               h4.fadeIn span:nth-of-type(7) {
+
+        h4.fadeIn span:nth-of-type(7) {
             animation-delay: 9s;
         }
 
@@ -97,7 +102,7 @@ h1:hover { text-shadow: 3px 3px 35px orange; }
 
         a:link,
         a:visited {
-            color: white;
+            color: rgb(252, 194, 112);
         }
 
         li {
@@ -105,13 +110,19 @@ h1:hover { text-shadow: 3px 3px 35px orange; }
         }
 
         a:hover {
-            color: orange;
+            color: rgb(221, 255, 0);
         }
 
         h4 {
             margin-left: 20%;
             margin-right: 20%;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .comments {
+            font-size: 17px;
+            margin-left: 20px;
+            margin-top: 5px;
         }
     </style>
 </head>
@@ -122,23 +133,40 @@ h1:hover { text-shadow: 3px 3px 35px orange; }
     </h1>
     <h2>
         <ul>
-            <li><a   class="hover-underline" href="https://sites.google.com/view/people-stories/home" target="_blank">People's History Research</a></li>
-            <li><a  class="hover-underline" href="https://sites.google.com/view/all-halls/other-bike-projects" target="_blank">Bicycling Projects</a></li>
-             <li><a  class="hover-underline" href="https://beckwith-cchs.netlify.app/other/links_to_all2.html" target="_blank">My Educational Web Projects</a>
+            <li><a class="hover-underline" href="https://sites.google.com/view/people-stories/home"
+                    target="_blank">People's History Research</a>
+                <div class="comments">The results of some of my genealogical research on families in and around
+                    Arlington and Cambridge</div>
             </li>
-            <li><a  class="hover-underline" href="https://www.reggaedawn.com/" target="_blank">My Boston Reggae Dawn Webpage</a></li>
-            <li><a  class="hover-underline" href="https://www.youtube.com/playlist?list=PLLnIhgSbqulOM4-StlMvmOj-kycQaZHnk" target="_blank">Original Music on
+            <li><a class="hover-underline" href="https://sites.google.com/view/all-halls/other-bike-projects"
+                    target="_blank">Bicycling Projects</a>
+                <div class="comments">Long bike trips exploring New England</div>
+            </li>
+            <li><a class="hover-underline" href="https://beckwith-cchs.netlify.app/other/links_to_all2.html"
+                    target="_blank">My Educational Web Projects</a>
+                <div class="comments">Games and tools I developed as a high school Computer Science Teacher</div>
+            </li>
+            <li><a class="hover-underline" href="https://www.reggaedawn.com/" target="_blank">My Boston Reggae Dawn
+                    Webpage</a>
+                <div class="comments">Music, stories, photos, and research on the history of Reggae Music in Boston</div>
+                </li>
+            <li><a class="hover-underline"
+                    href="https://www.youtube.com/playlist?list=PLLnIhgSbqulOM4-StlMvmOj-kycQaZHnk"
+                    target="_blank">Original Music on
                     YouTube</a>
+                    <div class="comments">Reggae music I've written and played</div>
             </li>
-                   <li><a  class="hover-underline" href="https://abeckwith.net/cwhp/" target="_blank">Women's History Project Redesign</a> (temporary location)
+            <li><a class="hover-underline" href="https://abeckwith.net/cwhp/" target="_blank">Cambridge Women's History Project
+                    Redesign</a> (temporary location)
+                    <div class="comments">I redesigned the Cambridge Historical Society's page for this project (soon to be on the CHC's site)</div>
             </li>
 
         </ul>
     </h2>
-    <h3 style="margin-left:50%"  class="hover-underline">ABOUT Anthony:</h3>
+    <h3 style="margin-left:50%" class="hover-underline">ABOUT Anthony:</h3>
     <h4 class="fadeIn">
         <span><img src="me.png"></span>
-    
+
         <span>
             Grew up in Cambridge, MA, and got my B.S. in Mathematics from UMass/Amherst and a
             Masters in Education from UMass/Boston
@@ -152,9 +180,9 @@ h1:hover { text-shadow: 3px 3px 35px orange; }
         <span>
             An avid bicycler who loves to plan complex multi-day trips
         </span>
-            <br><br>
-            <span>
-                 
+        <br><br>
+        <span>
+
             I produce
             original music and do volunteer work for a local historical society
         </span>
@@ -163,7 +191,7 @@ h1:hover { text-shadow: 3px 3px 35px orange; }
             I currently live with my wife and three cats in Arlington, MA
 
         </span><br><Br>
-    <span>Contact: anthonyrbeckwith@gmail.com</span>
+        <span>Contact: anthonyrbeckwith@gmail.com</span>
 
     </h4>
 </body>
