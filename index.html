@@ -149,7 +149,7 @@
         .date {
             font-size: 14px;
             color: antiquewhite;
-            margin-left:20px;
+            margin-left: 20px;
         }
 
         #content {
@@ -159,6 +159,53 @@
 
         span:hover {
             color: rgb(252, 194, 112);
+        }
+
+        @keyframes slide-in-left {
+            from {
+                transform: translateX(-500%);
+                /* Start off-screen to the left */
+            }
+
+            to {
+                transform: translateX(0);
+                /* End at its natural position */
+            }
+        }
+  @keyframes slide-in-right {
+            from {
+                transform: translateX(500%);
+                /* Start off-screen to the left */
+            }
+
+            to {
+                transform: translateX(0);
+                /* End at its natural position */
+            }
+        }
+
+        /* Apply the animation to an element */
+        .slide-left {
+            border: 5px solid  rgb(252, 194, 112);
+            border-radius:5px;
+            animation-name: slide-in-left;
+            animation-duration: 3s;
+            /* Animation duration */
+            animation-timing-function: ease-out;
+            /* Easing function */
+            animation-fill-mode: forwards;
+            /* Keep the final state */
+        }
+          .slide-right {
+            border: 5px solid  rgb(252, 194, 112);
+            border-radius:5px;
+            animation-name: slide-in-right;
+            animation-duration: 3s;
+            /* Animation duration */
+            animation-timing-function: ease-out;
+            /* Easing function */
+            animation-fill-mode: forwards;
+            /* Keep the final state */
         }
     </style>
 </head>
@@ -172,15 +219,15 @@
             </h1>
             <Br>
             <a href="https://beckwith-coding.netlify.app/other/links_to_all2.html">
-                <img src="images/edu.png" class="imgs"></a>
+                <img src="images/edu.png" class="imgs slide-left"></a>
             <a href="https://sites.google.com/view/people-stories/home">
-                <img src="images/ppl.png" class="imgs"></a>
+                <img src="images/ppl.png" class="imgs slide-right"></a>
             <a href="https://sites.google.com/view/all-halls/other-bike-projects">
-                <img src="images/bike.png" class="imgs"></a>
+                <img src="images/bike.png" class="imgs slide-left"></a>
             <a href="https://www.reggaedawn.com/">
-                <img src="images/rd.png" class="imgs"></a>
+                <img src="images/rd.png" class="imgs slide-right"></a>
             <a href="https://www.youtube.com/playlist?list=PLLnIhgSbqulOM4-StlMvmOj-kycQaZHnk">
-                <img src="images/rf.png" class="imgs"><a>
+                <img src="images/rf.png" class="imgs slide-left"><a>
                     <br>
         </Center>
         <h2>
@@ -192,34 +239,40 @@
                 </li>
                 <li><a class="hover-underline" href="https://sites.google.com/view/all-halls/other-bike-projects"
                         target="_blank">Bicycling Projects</a>
-                    <div class="comments">Long bike trips exploring New England <br><span class="date">Last updated: July 2025</span></div>
+                    <div class="comments">Long bike trips exploring New England <br><span class="date">Last updated:
+                            July 2025</span></div>
                 </li>
                 <li><a class="hover-underline" href="https://beckwith-coding.netlify.app/other/links_to_all2.html"
                         target="_blank">Educational Web Projects</a>
                     <div class="comments">Games and tools I developed as a high school Computer Science teacher<BR><BR>
                         Quick Links to: <a href="https://abeckwith.net/colordle/">DAILY COLORDLE</a> and
-                        <a href="https://abeckwith.net/bogglish/">BOGGLISH</a> <br><span class="date">Last updated: 2024</span>
+                        <a href="https://abeckwith.net/bogglish/">BOGGLISH</a> <br><span class="date">Last updated:
+                            2024</span>
                     </div>
 
                 </li>
 
                 <li><a class="hover-underline" href="https://www.reggaedawn.com/" target="_blank">Boston Reggae Dawn
                         Webpage</a>
-                    <div class="comments">My archives of music, stories, photos, and research on the history of Reggae Music in Boston
-                     <br><span class="date">Last updated: 2023</span></div>
+                    <div class="comments">My archives of music, stories, photos, and research on the history of Reggae
+                        Music in Boston
+                        <br><span class="date">Last updated: 2023</span>
+                    </div>
                 </li>
                 <li><a class="hover-underline"
                         href="https://www.youtube.com/playlist?list=PLLnIhgSbqulOM4-StlMvmOj-kycQaZHnk"
                         target="_blank">Original Music on
                         YouTube</a>
-                    <div class="comments">Reggae music I've written and played (and some covers) <br><span class="date">(last updated: July 2025)</span></div>
+                    <div class="comments">Reggae music I've written and played (and some covers) <br><span
+                            class="date">(last updated: July 2025)</span></div>
                 </li>
                 <li><a class="hover-underline" href="#" target="_blank">COMING SOON: Cambridge Women's
                         History Project
                         Redesign</a>
                     <div class="comments">I redesigned the Cambridge Historical Society's website for the CWHP<br> (I'll
                         post the link when
-                        it's officially posted on the City of Cambridge's site) <br><span class="date">Last updated: July 2025</span></div>
+                        it's officially posted on the City of Cambridge's site) <br><span class="date">Last updated:
+                            July 2025</span></div>
                 </li>
 
             </ul>
@@ -256,7 +309,7 @@
                 thinking...Why??? <br>
                 You'll see...I'll post a link here when it's done </span><Br><Br><br>
             <span>Contact: anthonyrbeckwith@gmail.com</span><br>
-            <span>Last updated: July 13, 2025</span>
+            <!-- <span>This page last updated: Aug. 2025</span> -->
 
         </h4>
         <div class="header"></div>
