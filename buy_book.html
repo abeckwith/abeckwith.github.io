@@ -1,0 +1,366 @@
+<html>
+
+<head>
+    <title>Anthony Beckwith Projects</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <base target="_blank">
+    <meta name="viewport" content="width=device-width">
+    <script>
+        function submit() {
+            document.getElementById("end").style.visibility = "visible";
+            var nameValue = document.getElementById("fullName").value;
+            var streetAddress = document.getElementById("streetAddress").value;
+            var quantity = document.getElementById("quantity").value;
+            var notes = document.getElementById("notes").value;
+            if(quantity == 1)
+            word = " copy";
+        else word = " copies";
+            html = "Hi, Anthony.\n\nI am purchasing " + quantity + word + " of your memoir.";
+            html += "\n\nHere is my mailing address:\n\n";
+
+            html += nameValue + "\n" + streetAddress + "\n\nThanks!\n\n" + notes;
+
+            document.getElementById("email").value = html;
+            window.scrollTo(0, document.body.scrollHeight);
+
+        }
+        function copy() {
+            let textarea = document.getElementById("email");
+            textarea.select();
+            document.execCommand("copy");
+            document.getElementById("copied").style.visibility = "visible";
+        }
+    </script>
+    <style>
+        img,
+        body {
+            max-width: 100%;
+
+            margin-bottom: 50px;
+        }
+
+        .header {
+            background: linear-gradient(to right, #ff0000, #1eff00);
+            height: 20px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+        }
+
+        .hover-underline {
+
+            color: #ffffff;
+            position: relative;
+            display: inline-block;
+        }
+
+        .hover-underline::after,
+        .hover-underline::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(to right, #ff0000, #1eff00);
+            bottom: -5px;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.4s ease-out;
+        }
+
+        .hover-underline::before {
+            top: -5px;
+            transform-origin: left;
+        }
+
+        .hover-underline:hover::after,
+        .hover-underline:hover::before {
+            transform: scaleX(1);
+        }
+
+        h4.fadeIn span {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 6s ease-out forwards;
+            /* display: inline-block; */
+            /* animation-delay: 10s; */
+
+        }
+
+        h1:hover {
+            text-shadow: 3px 3px 35px orange;
+        }
+
+        h4.fadeIn span:nth-of-type(2) {
+            animation-delay: 1.5s;
+        }
+
+        h4.fadeIn span:nth-of-type(3) {
+            animation-delay: 3s;
+        }
+
+        h4.fadeIn span:nth-of-type(4) {
+            animation-delay: 4.5s;
+        }
+
+        h4.fadeIn span:nth-of-type(5) {
+            animation-delay: 6s;
+        }
+
+        h4.fadeIn span:nth-of-type(6) {
+            animation-delay: 7.5s;
+        }
+
+        h4.fadeIn span:nth-of-type(7) {
+            animation-delay: 9s;
+        }
+
+
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        body {
+            background-color: rgb(69, 69, 69);
+            color: rgb(252, 194, 112);
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        img {
+            float: left;
+            margin-right: 2%;
+            size: 5%;
+
+
+        }
+
+        .imgs {
+            float: none;
+            height: 13%;
+        }
+
+        a:link,
+        a:visited {
+            color: rgb(5, 151, 255);
+
+        }
+
+        li {
+            margin-bottom: 20px;
+        }
+
+        a:hover {
+            color: rgb(221, 255, 0);
+        }
+
+        h4 {
+            margin-left: 15%;
+            margin-right: 12%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .comments {
+            font-size: 17px;
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+
+        input,
+        textarea {
+            padding: 12px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            width: 300px;
+            border-radius: 7px;
+        }
+
+        .date {
+            font-size: 14px;
+            color: antiquewhite;
+            margin-left: 20px;
+        }
+
+        #quantity {
+            width: 70px;
+        }
+
+        #content {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        span:hover {
+            color: rgb(252, 194, 112);
+        }
+
+        @keyframes slide-in-left {
+            from {
+                transform: translateX(-500%);
+                /* Start off-screen to the left */
+            }
+
+            to {
+                transform: translateX(0);
+                /* End at its natural position */
+            }
+        }
+
+        @keyframes slide-in-right {
+            from {
+                transform: translateX(500%);
+                /* Start off-screen to the left */
+            }
+
+            to {
+                transform: translateX(0);
+                /* End at its natural position */
+            }
+        }
+
+        button {
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 20px;
+            font-weight: 900;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        #end {
+            visibility: hidden;
+        }
+
+        .buy-button:hover {
+            color: black;
+            background-color: white;
+
+        }
+
+        /* Apply the animation to an element */
+        .slide-left {
+            border: 5px solid rgb(252, 194, 112);
+            border-radius: 5px;
+            animation-name: slide-in-left;
+            animation-duration: 3s;
+            /* Animation duration */
+            animation-timing-function: ease-out;
+            /* Easing function */
+            animation-fill-mode: forwards;
+            /* Keep the final state */
+        }
+
+        .slide-right {
+            border: 5px solid rgb(252, 194, 112);
+            border-radius: 5px;
+            animation-name: slide-in-right;
+            animation-duration: 3s;
+            /* Animation duration */
+            animation-timing-function: ease-out;
+            /* Easing function */
+            animation-fill-mode: forwards;
+            /* Keep the final state */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header"></div>
+    <CENTER><img src="images/book.jpg" style="float:right;width:20%"></CENTER>
+    <div id="content">
+        <h2 style="margin-right:30%">PRICE FOR THE PAPERBACK:
+            <ul>
+                <li>
+                    <div class="comments">
+                        If you live in Greater Boston:<span style="color:white"> $10</span>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="comments">
+                        Outside Greater Boston (within U.S.): <span style="color:white"> $15</span><br>
+
+
+                    </div>
+                </li>
+                <li>
+                    <div class="comments">
+                        I will mail the book to you!
+
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="comments">
+                        Please fill out the form below
+
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="comments">
+                        If you don't have Venmo, you can send me a check (I will use your email address to send you my
+                        mailing address)<br><span style="color:white">VENMO: @Anthony-Beckwith-3</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="comments">
+                        You can wait until the book arrives to pay me, if you want
+                    </div>
+                </li>
+
+            </ul>
+
+
+        </h2>
+    </div>
+    <br>
+    <div class="form-container" style="margin-left:50px;">
+        <!-- <form id="addressForm" > -->
+        <B>ORDER FORM:</B><BR><Br>
+        <label for="fullName">Your Name</label><Br>
+        <input type="text" id="fullName" name="fullName"><BR>
+
+        <label for="streetAddress">Your Mailing Address</label><Br>
+        <textarea type="text" id="streetAddress" name="streetAddress" rows="4"></textarea>
+        <br>
+        <label for="quantity">Number of Books:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="100" value="1"><br>
+        <label for="streetAddress">OPTIONAL NOTES:</label><Br>
+        <textarea type="text" id="notes" name="streetAddress" rows="4"></textarea><Br>
+        <button type="submit" onclick="submit()">Submit</button>
+
+        <br>
+        <!-- </form> -->
+
+    </div>
+    <br>
+    <div id="end">
+        Yeah, I wish that was all you had to do, but...:)<Br><br>
+        Please create an email addressed to <span style="color:white">MyRideThroughLife@gmail.com</span>,<Br>
+            &nbsp;&nbsp; then copy and paste
+        this text into the body - that's it!<Br><br>
+        <textarea type="text" id="email" name="email" rows="20"></textarea><br>
+        <div id="copied" style="visibility:hidden">COPIED!</div>
+        <button onclick="copy()">COPY</button>
+
+    </div>
+
+</body>
+
+</html>
