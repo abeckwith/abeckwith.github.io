@@ -8,7 +8,14 @@
     <link rel="manifest" href="/site.webmanifest">
     <base target="_blank">
     <meta name="viewport" content="width=device-width">
+    <script>
+        function setImage() {
 
+            sel = Math.floor(Math.random() * 14) + 1;
+            img_path = "random_imgs/" + sel + ".png";
+            document.getElementById("img-me").innerHTML = "<img src='" + img_path + "' style='width:35%'>";
+        }
+    </script>
     <style>
         img,
         body {
@@ -212,8 +219,9 @@
     </style>
 </head>
 
-<body>
-    <div class="header"></div>
+<body onload="setImage()"">
+    <div class=" header">
+    </div>
     <div id="content">
         <Center>
             <h1 class="hover-underline">
@@ -232,7 +240,7 @@
                 <img src="images/rf.png" class="imgs slide-left"></a>
             <span>
                 <A href="https://sites.google.com/view/myridethroughlife?usp=sharing">
-                <img src="images/book.jpg" class="imgs slide-left"></span></a>
+                    <img src="images/book.jpg" class="imgs slide-left"></span></a>
             <br>
         </Center>
         <h2 style="margin-right:30%">
@@ -240,21 +248,23 @@
                 <li>
                     <a class="hover-underline" href="https://sites.google.com/view/myridethroughlife?usp=sharing"
                         target="_blank">Information about my new memoir</a><br>
-                        
-                   
 
-                    <div class="comments">My 2025 memoir, <a href="https://sites.google.com/view/myridethroughlife?usp=sharing">
 
-                  <i> My Ride Through Life </i></a>, is available at local bookstores and other platforms (the paperback, ebook, audiobook) as of October 2025
-                         
-                    <br><span class="date">Last updated: October 18, 2025</span>
+
+                    <div class="comments">My 2025 memoir, <a
+                            href="https://sites.google.com/view/myridethroughlife?usp=sharing">
+
+                            <i> My Ride Through Life </i></a>, is available at local bookstores and other platforms (the
+                        paperback, ebook, audiobook) as of October 2025
+
+                        <br><span class="date">Last updated: October 18, 2025</span>
                     </div>
 
 
 
 
                 </li>
-              
+
                 <li><a class="hover-underline" href="https://sites.google.com/view/people-stories/home"
                         target="_blank">People's History Research</a>
                     <div class="comments">The results of some of genealogical research on families in and around
@@ -292,22 +302,30 @@
                 <li><a class="hover-underline" href="https://cwhp.cambridgema.gov/" target="_blank">Cambridge Women's
                         History Project
                         Redesign</a>
-                    <div class="comments">I proposed and implemented a redesign of the Cambridge Historical Commission's website for the CWHP (volunteer work)<br><span class="date">Last updated:
+                    <div class="comments">I proposed and implemented a redesign of the Cambridge Historical Commission's
+                        website for the CWHP (volunteer work)<br><span class="date">Last updated:
                             September 2025</span></div>
                 </li>
-                 <li><a class="hover-underline" href="https://abeckwith.net/cadbury/mockup.html" target="_blank">
-                    Assisted Living Facility Log</a>
-                    <div class="comments">I proposed and designed a tablet-based visitor log system to replace paper version (volunteer work)<br><span class="date">Last updated:
-                            September 2025</span></div>
+                <li><a class="hover-underline" href="https://abeckwith.net/cadbury/mockup.html" target="_blank">
+                        Assisted Living Facility Log</a>
+                    <div class="comments">I proposed and designed a tablet-based visitor log system to replace paper
+                        version (volunteer work)
+                        <br>NOTE: the above link is a mockup of the log, using fictitious names<br><span
+                            class="date">Last updated:
+                            September 2025</span>
+                    </div>
                 </li>
 
 
-                
+
             </ul>
         </h2>
         <h3 style="margin-left:50%" class="hover-underline">ABOUT Anthony:</h3>
         <h4 class="fadeIn">
-            <span><img src="me.png"></span>
+            <span id="img-me">
+
+                <!-- <img src="me.png"> -->
+            </span>
 
             <span>
                 Grew up in Cambridge, MA, and got my B.S. in Mathematics from UMass/Amherst and a
