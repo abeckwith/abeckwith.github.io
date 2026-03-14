@@ -1,36 +1,25 @@
 <html>
 
 <head>
-    <title>Anthony Beckwith Projects</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <title>Beckwith: Paper Keeper</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <!-- <base> -->
     <meta name="viewport" content="width=device-width">
     <!-- Google tag (gtag.js) -->
-   
+
     <style>
-       
-
-
-
-
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
         body {
             background-color: rgb(69, 69, 69);
             color: rgb(252, 194, 112);
-            font-size: 20px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif
+            font-size: 1vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 5vw;
+            margin-left:10vw;
+            margin-right:10vw;
         }
-
-      
 
         .imgs {
             float: none;
@@ -40,11 +29,6 @@
         a:link,
         a:visited {
             color: rgb(5, 151, 255);
-
-        }
-
-        li {
-            margin-bottom: 20px;
         }
 
         a:hover {
@@ -57,82 +41,48 @@
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
 
-        .comments {
-            font-size: 17px;
-            margin-left: 20px;
-            margin-top: 5px;
+
+
+        .intro:hover {
+            color: rgb(112, 238, 252);
         }
 
-        .date {
-            font-size: 14px;
-            color: antiquewhite;
-            margin-left: 20px;
+
+        #cover {
+            width: 20vw;
         }
 
-        #content {
-            margin-left: 5%;
-            margin-right: 5%;
+        .inside {
+            width: 37vw;
+            border: 1px black solid;
         }
 
-        span:hover {
-            color: rgb(252, 194, 112);
-        }
-
-        @keyframes slide-in-left {
-            from {
-                transform: translateX(-500%);
-                /* Start off-screen to the left */
-            }
-
-            to {
-                transform: translateX(0);
-                /* End at its natural position */
-            }
-        }
-
-        @keyframes slide-in-right {
-            from {
-                transform: translateX(500%);
-                /* Start off-screen to the left */
-            }
-
-            to {
-                transform: translateX(0);
-                /* End at its natural position */
-            }
-        }
-
-        /* Apply the animation to an element */
-        .slide-left {
-            border: 5px solid rgb(252, 194, 112);
-            border-radius: 5px;
-            animation-name: slide-in-left;
-            animation-duration: 3s;
-            /* Animation duration */
-            animation-timing-function: ease-out;
-            /* Easing function */
-            animation-fill-mode: forwards;
-            /* Keep the final state */
-        }
-
-        .slide-right {
-            border: 5px solid rgb(252, 194, 112);
-            border-radius: 5px;
-            animation-name: slide-in-right;
-            animation-duration: 3s;
-            /* Animation duration */
-            animation-timing-function: ease-out;
-            /* Easing function */
-            animation-fill-mode: forwards;
-            /* Keep the final state */
-        }
-        #cover{
-            width:20vw;
-        }
         @media screen and (max-width: 700px) {
-            #cover{
-                width:40vw;
+            #cover {
+                width: 40vw;
             }
+
+            body {
+                font-size: 2vw;
+            }
+
+            .inside {
+                width: 60vw;
+            }
+        }
+
+        .white {
+            color: white;
+        }
+
+        .intro {
+            text-align: justify;
+            text-justify: inter-word;
+            hyphens: auto;
+            margin-left: 18vw;
+            margin-right: 18vw;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
         }
     </style>
 </head>
@@ -143,19 +93,44 @@
     <div id="content">
         <Center>
             <h1 class="hover-underline">
-                Barbara Beckwith's 2026 memoir:
+                Barbara Beckwith's memoir was released in March 0f 2026:
             </h1>
             <img id="cover" src="eBookCover.png">
             <Br>
-          
-            
-                <h2>
-                    
-                    <a class="hover-underline" href="https://drive.google.com/drive/folders/13n-AqKS9T7hak9_7JXbx_18eYS5RVZxB?usp=sharing">
-                        Free eBook and PDF</a> <Br>
-                            
-                        </Center>
-             
+
+
+            <h2>
+
+                <hr>
+                <div class="white intro">
+                    Barbara Beckwith was born in Brooklyn, raised in new Jersey, and settled in 1960s Cambridge,
+                    Massachusets, where she
+                    became a teacher, activist, journalist, writer and organizer.<Br><Br>
+                    To write her memoir, Barbara combed through more than 70 years of "paper" she had saved - letters,
+                    diaries, travel logs,
+                    curriculum she developed, and articles she wrote - to take the reader through the arc of her life.
+                </div><hr>
+                You can download the free eBook or PDF<Br>
+                <a class="hover-underline"
+                    href="https://drive.google.com/drive/folders/13n-AqKS9T7hak9_7JXbx_18eYS5RVZxB?usp=sharing">
+                    HERE</a> <Br><br>
+                There are a limited number of paperback copies in print:
+                <div class="intro"><Br>Contact Barbara at <b>beckwithb@aol.com</b>
+                    for more information<br><Br></div>
+                <hr>
+                COMING SOON: <div class="white intro">The eBook and print-on-demand paperback may be available on Amazon
+                    in the
+                    coming weeks<br></div>
+
+                <Br>
+                <hr>
+                A look inside!<Br>
+            </h2>
+            <img class="inside" src="contents.png"><Br><Br>
+            <img class="inside" src="lookinside.png"> <br><Br>
+            <img class="inside" src="inside2.png">
+        </Center>
+
 
 
 
