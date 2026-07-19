@@ -12,21 +12,54 @@
     <style>
         img,
         body {
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             max-width: 100%;
-            background-color: rgb(157, 152, 152);
+            background-color: #384959;
             margin-bottom: 10px;
-            font-size:2.9vw;
+            font-size: 2.9vw;
+            color: #bdddfc;
         }
-        li{
-            font-size:2.5vw;
+
+        li {
+            font-size: 2vw;
+            list-style: none;
+            padding:5px;
+
         }
-        #end{
-            font-size:2vw;
+
+        #end {
+            font-size: 2vw;
         }
-        img{
-            width:30%;
+
+        img {
+            width: 30%;
         }
+
+        ol {
+            background: #88bdf2;
+            padding: 20px;
+        }
+
+        ol li {
+            background: #384959;
+            color: darkred;
+            padding: 10px;
+            margin-left: 20px;
+        }
+
+        ul {
+            background: rgb(26, 118, 188);
+            padding: 20px;
+                        border-radius:10px;
+
+        }
+
+        ul li {
+            background: #bdddfc;
+            color: darkblue;
+            margin: 5px;
+        }
+
         .header {
             text-align: center;
             color: white;
@@ -34,16 +67,36 @@
         }
 
         @media screen and (max-width: 700px) {
-            .header,li, #end {
+
+            .header,
+            li,
+            #end {
                 font-size: 5vw;
             }
-            img{
-                width:50%;
+
+            img {
+                width: 50%;
             }
         }
-        #bullets{
-            margin-left:10vw;
-            padding-left:10vw;
+
+        .bullets {
+            margin-left: 8vw;
+            margin-right: 8vw;
+        }
+
+        button {
+            background-color: white;
+            border: none;
+            border-radius:7px;
+            color: black;
+            padding: 20px 39px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 19px;
+            margin: 4px 2px;
+            cursor: pointer;
+            text-decoration:none;
         }
     </style>
 </head>
@@ -51,14 +104,20 @@
 <body>
     <center>
         <div class="header">
-            Lolo Beckwith Pike's Book...<Br><br><i>The Beckwith-Berkowitz
+
+            <br>
+            <i>The Beckwith-Berkowitz
                 Family History:<br>
-                Tales of Life from 1886 to 1996 as Told by Ourselves</i><br><br>
-            <a href="https://drive.google.com/drive/folders/1usmZNSEhLuCek5rOGOajPtkvGxEJf4ny">GET SEARCHABLE PDF <br>
-                <img src="cover.jpg"></a>
+                Tales of Life from 1886 to 1996 as Told by Ourselves</i>, by Lolo Beckwith Pike<br>
+                <div class="button">
+                <button onclick="window.location.href='https://drive.google.com/drive/folders/1usmZNSEhLuCek5rOGOajPtkvGxEJf4ny'">GET SEARCHABLE PDF</button>
+                            
+            </div><br>
+            <br>
+             <a href="https://drive.google.com/drive/folders/1usmZNSEhLuCek5rOGOajPtkvGxEJf4ny"><img src="cover.jpg"></a>
     </center>
-    <span id="bullets">
-        <ul>
+    <div class="bullets">
+        <ul><li style="font-size:50px">MORE:</li>
             <li>Substack article about the <a
                     href="https://abeckwith.substack.com/p/mysteries-often-buried-deep">Mysterious
                     Joe Berkowitz</a></li>
@@ -70,12 +129,15 @@
             <li><a href="https://www.youtube.com/playlist?list=PLWh65T4T71as">Home movies from c.1940s,</a> including JB
                 and other relatives
             </li>
-            <li><a href="https://sites.google.com/view/myridethroughlife">Anthony Beckwith's memoir</a> includes an early
+            <li><a href="https://sites.google.com/view/myridethroughlife">Anthony Beckwith's memoir</a> includes an
+                early
                 summary
                 of the family story </li>
         </ul>
-    </span>
- <div id="end" style="text-align:center;color:white"> Great to see everyone at the July 18 reunion!<Br>  MORE COMING SOON TO THIS PAGE!</div><br><br>
+    </div>
+    <div id="end" style="text-align:center;color:white"> It was great to see everyone at the July 18 reunion!<Br> MORE
+        COMING
+        SOON TO THIS PAGE!</div><br><br>
 </body>
 
 </html>
